@@ -1,44 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-* {
+* 
+{
   font-family: 'Roboto', sans-serif;
 }
 
-html {
+html 
+{
   margin: 0px;
   padding: 0px;
   background: #f3f6f9;
 }
 
-body {
+body 
+{
   margin: 0px;
   padding: 0px;
 }
+
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+.left_menu
+{
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+
+  height: 100vh;
+
+  position: fixed;
+
+  background: #3f4d67;
+  box-shadow: 1px 0 20px 0 #3f4d67;
+}
+
+.left_menu ul
+{
+  
+}
+
+.left_menu ul li
+{
+  list-style: none;
+}
+
+.left_menu ul li a
+{
+  text-decoration: none;
+}
+
+.left_menu ul li a:hover
+{
+  transition: 0.3s;
+  background: #2b364b;
+  color: white;
+}
+
+.left_menu ul li a span
+{
+
+}
+
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
 
 .container 
 {
-  background: #f3f6f9;
   padding: 20px;
+  background: #f3f6f9;
 }
 
 .menu
 {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
-  
-}
-.left_toolbar {
-  background: green;
+  justify-content: flex-end;
 }
 
 .right_toolbar {
   min-width: 100px;
-  display: flex;
-  /* or inline-flex */
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
-
 }
 
 .notification 
@@ -65,11 +114,4 @@ body {
   transition: 0.3s;
   color: #04a9f5;
   cursor: pointer;
-}
-
-.left_menu
-{
-  display: flex;
-  padding: 15px;
-  background: #3f4d67;
 }

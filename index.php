@@ -14,33 +14,34 @@
 </head>
 
 <body>
+    <!-- MENU DE GAUCHE -->
 
-    <div class="container">
         <nav class="left_menu">
-            bloc de gauche 
-        </nav>
-        
-        <nav class="menu">
-            <div class="left_toolbar">
-                <input type="search" id="site-search" name="q" aria-label="Search through site content">
-                <i class="fas fa-search fa-1x"></i>
-                
-            </div>
-            <div class="right_toolbar">
-                <div class="notification">
-                    <i class="far fa-bell fa-1x"></i>
-                    <i class="fas fa-chevron-down fa-1x"></i>
-                </div>
-                <div class="settings">
-                    <i class="fas fa-cog fa-1x"></i>
-                    <i class="fas fa-chevron-down fa-1x"></i>
-                </div>
+            <h1>Heude conception</h1>
 
-            </div>
+            <ul>
+                <li><label>Navigation</label></li>
+                <li><a href="#"><span>logo</span><span>components</span></a></li>
+            </ul>
         </nav>
 
-    </div>
-
+        <!-- PAGE -->
+        <div class="container">
+            <!-- DEBUT DU MENU -->
+            <nav class="menu">
+                <div class="right_toolbar">
+                    <div class="notification">
+                        <i class="far fa-bell fa-1x"></i>
+                        <i class="fas fa-chevron-down fa-1x"></i>
+                    </div>
+                    <div class="settings">
+                        <i class="fas fa-cog fa-1x"></i>
+                        <i class="fas fa-chevron-down fa-1x"></i>
+                    </div>
+                </div>
+            </nav>
+            <!-- FIN DU MENU -->
+        </div>
 </body>
 
 </html>
