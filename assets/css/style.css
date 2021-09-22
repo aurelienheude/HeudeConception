@@ -66,3 +66,10 @@ body {
   color: #04a9f5;
   cursor: pointer;
 }
+
+.left_menu
+{
+  display: flex;
+  padding: 15px;
+  background: #3f4d67;
+}

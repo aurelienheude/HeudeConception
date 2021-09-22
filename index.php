@@ -16,6 +16,10 @@
 <body>
 
     <div class="container">
+        <nav class="left_menu">
+            bloc de gauche 
+        </nav>
+        
         <nav class="menu">
             <div class="left_toolbar">
                 <input type="search" id="site-search" name="q" aria-label="Search through site content">
