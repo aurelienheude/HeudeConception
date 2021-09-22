@@ -17,11 +17,27 @@
     <!-- MENU DE GAUCHE -->
 
         <nav class="left_menu">
-            <h1>Heude conception</h1>
+            <div class="header_title">
+                <h1>Heude conception</h1>
+                <i>version 0.1</i>
+            </div>
+            
 
             <ul>
-                <li><label>Navigation</label></li>
-                <li><a href="#"><span>logo</span><span>components</span></a></li>
+                <li class="li_label"><label>Navigation</label></li>
+                <li><a href="#"><span><i class="fas fa-laptop-house"></i></span><span>Tableau de bord</span></a></li>
+
+                <li class="li_label"><label>Finance</label></li>
+                <li><a href="#"><span><i class="fas fa-laptop-house"></i></span><span>Tableau de bord</span></a></li>
+
+                <li class="li_label"><label>Gestion</label></li>
+                <li><a href="#"><span><i class="fas fa-laptop-house"></i></span><span>Tableau de bord</span></a></li>
+
+                <li class="li_label"><label>Clients</label></li>
+                <li><a href="#"><span><i class="fas fa-laptop-house"></i></span><span>Tableau de bord</span></a></li>
+
+                <li class="li_label"><label>Autre</label></li>
+                <li><a href="#"><span><i class="fas fa-laptop-house"></i></span><span>Tableau de bord</span></a></li>
             </ul>
         </nav>
 

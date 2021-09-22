@@ -26,11 +26,29 @@ body
 /****************************************************************************************/
 /****************************************************************************************/
 
+.header_title
+{
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
+
+.header_title h1
+{
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.header_title i
+{
+  font-size: 14px;
+}
+
 .left_menu
 {
   display: flex;
   flex-flow: column;
-  padding: 20px;
 
   height: 100vh;
 
@@ -42,17 +60,37 @@ body
 
 .left_menu ul
 {
-  
+  margin: 0px;
+  padding: 0px;
+  padding-top: 30px;
 }
 
 .left_menu ul li
 {
+  display: block;
   list-style: none;
+}
+
+.left_menu ul .li_label
+{
+  margin-left: 15px;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+}
+
+.left_menu ul li label
+{
+  color: white;
 }
 
 .left_menu ul li a
 {
+  display: block;
   text-decoration: none;
+  color: white;
+  text-align: left;
+  padding: 10px 15px;
+  margin: 0px 0 0;
 }
 
 .left_menu ul li a:hover
@@ -64,7 +102,7 @@ body
 
 .left_menu ul li a span
 {
-
+  
 }
 
 /****************************************************************************************/
@@ -88,6 +126,7 @@ body
   min-width: 100px;
   display: inline-flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .notification 
