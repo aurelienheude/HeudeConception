@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    background: #F4F7FA;
+}
+
+.left {
+    /* bloc position */
+    display: inline-flex;
+    justify-content: center;
+    position: fixed;
+
+    z-index: 1;
+
+    /* bloc dimension */
+    width: 14%;
+    height: 100%;
+
+    /* bloc marge */
+
+
+    /* bloc style */
+
+    background: #3F4D67;
+
+    box-shadow: 1px 0 20px 0 #3f4d67;
+}
+
+.right {
+    display: inline-flex;
+    flex: auto;
+
+    flex-flow: column;
+
+
+    padding-left: 14%;
+
+
+    background: #F4F7FA;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10px;
+
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    background: #F4F7FA;
+}
+
+.nav i {
+    color: #1b1b1b;
+}
+
+.left_nav {}
+
+.left_nav input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+
+}
+
+.left_nav input:hover {}
+
+.right_nav {
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 90px;
+}
+
+.right_nav a {
+    display: block;
+}
+
+.right_nav a:hover i {
+    transition: 0.2s;
+    color: #1DD6D1;
+    cursor: pointer;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.line_cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    padding: 2%;
+}
+
+.cards {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-flow: column;
+
+    padding: 2%;
+
+    width: 28%;
+    height: 100px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+
+    background: #FFFFFF;
+}
+
+
+
+.header_cards {
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.article_cards {
+    padding-bottom: 20px;
+    justify-self: center;
+
+}
+
+.article_cards b
+{
+    font-weight: 550; 
+    font-size: 26px; 
+    margin-left: 10px;
+}
+
+.article_cards i
+{
+    color: #1de9b6;
+}
+
+progress {
+    -webkit-appearance: none;
+
+    width: 100%;
+    height: 10px;
+}
+
+::-webkit-progress-bar {
+    background-color: #f4f7fa;
+    background-size: 10px 10px;
+}
+
+progress[value]::-webkit-progress-value 
+{
+    background-image: linear-gradient(-180deg,#1de9b6 0%,#1dc4e9 100%);
+    background-size: 10px 10px;
+    border
+}
+
+.progress_cards {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+/*   CARDS 2 */
+
+.line_cards_2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin: 0px;
+    padding: 0% 2% 0% 2%;
+}
+
+.stat_cards {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-flow: column;
+
+    padding: 3%;
+
+    width: 60%;
+    height: 600px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+
+    background: #FFFFFF;
+}
+
+.event_incoming_cards {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-flow: column;
+
+    margin: 0px;
+    padding: 3%;
+
+    width: 26%;
+    height: 400px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+
+    background: #FFFFFF;
+}
+
+/*   BREAKPOINT */
+
+@media only screen and (max-width: 1024px) {
+    .cards {
+        margin-top: 2%;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+}
