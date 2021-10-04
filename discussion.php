@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <div class="left">
+    <div class="left">
             <header class="header_menu">
                 <div class="header_brand">
                     <div class="bg_icon">
@@ -40,7 +40,7 @@
                     <li>
                         <a href="discussion.php">
                             <span class="icon">
-                                <i class="far fa-comments fa-1x"></i>
+                            <i class="far fa-comments fa-1x"></i>
                             </span>
                             <span class="li_menu">Discussion</span>
                         </a>
@@ -89,31 +89,33 @@
                 </div>
 
                 <div class="right_nav">
-                    <div class="notification_nav">
-                        <ul>
-                            <li><a href="">
-                                    <i class="far fa-comment fa-1x"></i>
-                                </a>
-                            </li>
-                            <li><a href="">
-                                    <i class="far fa-clock fa-1x"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-
+                    <div>
+                        <a href="">
+                            <i class="fa fa-bell fa-1x"></i>
+                            <i class="fas fa-chevron-down fa-1x"></i>
+                        </a>
                     </div>
-                    <div class="user_nav">
-                        <ul>
-                            <li>
-                                <img src="img/profil_pic.jpg" alt="">Aurélien Heude
-                            </li>
-                        </ul>
+                    <div>
+                        <a href="">
+                            <i class="fa fa-cog fa-1x"></i>
+                            <i class="fas fa-chevron-down fa-1x"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <?php include "page.php"; ?>
+            <div class="chatbox">
+                <header class="chatbox_header">
+                    <p>Jean baptiste</p>
+                    <div class="chatbox_header_items">
+                        <i class="fas fa-times fa-1x"></i> <!-- close button -->
+                    </div>
+                </header>
+                <div class="chatbox">
+                    <input type="textarea">
+                    <input type="submit">
+                </div>
+            </div>
         </div>
     </div>
 </body>
