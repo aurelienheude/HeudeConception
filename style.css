@@ -157,9 +157,12 @@ body
 {
     display: flex;
     align-items: center;
-    text-decoration: none;
+
     height: 100%;
     width: 100%;
+    
+    text-decoration: none;
+    
     background: none;
     color: #d1d1d1;
 }
@@ -184,19 +187,17 @@ body
 /*******************************************************************************/
 /*******************************************************************************/
 
-.right {
+.right 
+{
     display: inline-flex;
     flex: auto;
-
     flex-flow: column;
 
     height: 100vh;
 
     padding-left: 267px;
 
-
-    background: #F4F7FA;
-
+    background: #3f3f3f;
     transition: padding-left 0.2s;
 }
 
@@ -204,14 +205,12 @@ body
 /*******************************************************************************/
 /*******************************************************************************/
 
-.nav {
+.nav 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
-
-    margin-bottom: 1%;
-
     
     color: white;
     background: #2e3b55;
@@ -223,95 +222,114 @@ body
     text-decoration: none;
 }
 
+/******************************************/
+
 .user_nav
 {
-    padding-top: 1%;
-    padding-bottom: 1%;
-
-    min-width: 200px;
+    width: 180px;
 
     background: none;
-
     transition: background 0.2s;
 }
 
 .user_nav:hover
 {
-    cursor: pointer;
-    background: #272f3f;
+    background: #4f5f7c;
 }
 
-.user_nav ul
+.user_ul
 {
     margin: 0;
     padding: 0;
+    list-style: none;
+
+    height: 50px;
 }
 
-.user_nav ul li
+.user_li
+{
+    height: 100%;
+
+    position: relative;
+    list-style: none;
+
+}
+
+.user_li a
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     flex-flow: row;
+    align-items: center;
+
+    height: 100%;
+}
+
+.user_nav_ul_child
+{
+    display: none;
+    flex-flow: column;
+
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
+
+    width: 100%;
 
     list-style: none;
+
+    background: #272f3f;
 }
+
+.user_nav_li_child
+{
+    width: 100%;
+
+    background: #272f3f;
+    transition: background 0.2s;
+}
+
+.user_nav_li_child i
+{
+
+}
+
+.user_nav_li_child a
+{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #272f3f;
+    color: white
+}
+
+.user_li:hover > .user_nav_ul_child 
+{
+    display: flex;
+}
+
+.user_nav_li_child:hover
+{
+    background: #4f5f7c;
+}
+
+.user_nav img
+{
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid #272f3f;
+    border-radius: 50%;
+}
+
+/******************************************/
 
 .right_nav 
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.user_nav img
-{
-    margin-right: 7%;
-    border: 2px solid #272f3f;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-}
-
-.notification_nav
-{
-    padding-top: 1%;
-    padding-bottom: 1%;
-
-    min-width: 80px;
-
-    background: none;
-
-    transition: background 0.2s;
-}
-
-.notification_nav ul
-{
-    margin: 0;
-    padding: 0;
-
-    
-}
-
-.notification_nav ul li
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-
-    list-style: none;
-}
-
-.notification_nav ul li:hover
-{
-    cursor: pointer;
-    background: #272f3f;
-}
-
-.notification_nav ul li a
-{
-    display: block;
 }
 
 .right_nav a:hover i 
@@ -321,6 +339,7 @@ body
     cursor: pointer;
 }
 
+/******************************************/
 
 .left_nav
 {
@@ -336,7 +355,7 @@ body
 }
 
 /*******************************************************************************/
-/*******************************************************************************/
+/**********************************   INDEX   **********************************/
 /*******************************************************************************/
 
 .line_cards 
@@ -362,9 +381,9 @@ body
 
     font-family: 'Open Sans', sans-serif;
 
-    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+    box-shadow: 0 1px 20px 0 #1a1a1a48;
 
-    background: #FFFFFF;
+    background: #444444;
 }
 
 
@@ -434,6 +453,8 @@ progress[value]::-webkit-progress-value
 
     margin: 0px;
     padding: 0% 2% 0% 2%;
+
+    background: #3f3f3f;
 }
 
 .stat_cards {
@@ -448,9 +469,9 @@ progress[value]::-webkit-progress-value
 
     font-family: 'Open Sans', sans-serif;
 
-    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+    box-shadow: 0 1px 20px 0 #1a1a1a48;
 
-    background: #FFFFFF;
+    background: #444444;
 }
 
 .event_incoming_cards {
@@ -466,29 +487,117 @@ progress[value]::-webkit-progress-value
 
     font-family: 'Open Sans', sans-serif;
 
-    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+    box-shadow: 0 1px 20px 0 #1a1a1a48;
 
-    background: #FFFFFF;
+    background: #444444;
 }
 
 /******************************************************************************/
 /******************************   DISCUSSION   ********************************/
 /******************************************************************************/
 
-.chatbox
+.message_content
 {
-    display: inline-flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+
+    overflow: auto;
+}
+
+.thread_list
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 15px;
+
+    height: 90vh;
+
+    overflow: auto;
+}
+
+.thread_message
+{
+    display: flex;
+    justify-content: flex-start;
     flex-flow: row;
 
-    width: 380px;
-    height: 600px;
+
 }
 
-.chatbox_header img
+.avatar
 {
-    border-radius: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 15px;
+}
+
+.avatar img
+{
+    border-radius: 50%;
+}
+
+.message_core
+{
+    padding: 15px;
+}
+
+.message_header
+{
+
+}
+
+.message_author
+{
+    
+}
+
+.message_date
+{
+
+}
+
+.message_text
+{
+
+}
+
+.message_text p
+{
+
+}
+
+/******************************************************************************/
+/*********************************   CHATBOX   ********************************/
+/******************************************************************************/
+
+.chatbox
+{
+    bottom: 0;
+    left: auto;
+    right: 10px;
+    position: fixed;
+
+    display: flex;
+    flex-flow: column;
+
+    height: 40px;
+    width: 367px;
+
+    box-sizing: border-box;
+    z-index: 1000;
+
+    box-shadow: -5px 5px 10px 0px #000;
+
+    transition: height 0.3s;
+}
+
+.chatbox:hover
+{
+    height: 490px;
 }
 
 
@@ -500,9 +609,77 @@ progress[value]::-webkit-progress-value
 
 
 
+/***********   Message write   **************/
 
+.message_write
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
 
-/*   BREAKPOINT 768, 1024, 1440 */
+    margin: 0;
+    padding: 15px;
+
+    height: 7%;
+
+    background: rgb(221, 221, 221);
+}
+
+.sidebar_pic
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+
+.sidebar_pic img
+{
+    border-radius: 50%;
+}
+
+.sidebar_text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+}
+
+.sidebar_text textarea
+{
+    margin: 0px;
+    padding: 15px;
+
+    resize : none;
+
+    height: 18px;
+    width: 100%;
+
+    outline: none;
+    border :none;
+    border-radius: 10px;
+}
+
+.sidebar_tool
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************************************************************************/
+/************************   BREAKPOINT 768, 1024, 1440   **********************/
+/******************************************************************************/
 
 @media only screen and (max-width: 1224px) 
 {
