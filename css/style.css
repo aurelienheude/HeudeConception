@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body 
+{
+	height: 100%;
+
+	margin: 0; 
+    padding: 0;
+}
+
+.container /* body */
+{
+    width: 100%;
+    background: #F4F7FA;
+}
+
+/******************************************************************************/
+/************************   BREAKPOINT 768, 1024, 1440   **********************/
+/******************************************************************************/
+
+@media only screen and (max-width: 1440px) 
+{
+
+}
+
+@media only screen and (max-width: 1024px)
+{
+
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
