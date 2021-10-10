@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html, body 
+html
 {
 	height: 100%;
 
@@ -13,10 +13,102 @@ html, body
     padding: 0;
 }
 
-.container /* body */
+.body_website
 {
-    width: 100%;
-    background: #F4F7FA;
+    height: 5000px;
+
+	margin: 0; 
+    padding: 0;
+}
+
+.nav_website
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #383838;
+}
+
+.nav_website .branding
+{
+
+}
+
+.nav_website .branding h1
+{
+    color: white;
+}
+
+.nav_website .group_button_website
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav_website .connect
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_website .register
+{   
+    text-decoration: none;
+    color: white;
+}
+
+.nav_website ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_website ul li
+{
+    list-style: none;
+}
+
+.nav_website ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.up_button
+{
+    bottom: 0;
+    right: 0;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2.5%;
+    padding: 8px;
+
+    width: 21px;
+    height: 21px;
+
+    background: #383838;
+    color: white;
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: color 0.2s, background 0.2s;
+}
+
+.up_button:hover
+{
+    background: #292929;
+    color: rgb(0, 225, 255);
 }
 
 /******************************************************************************/
